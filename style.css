@@ -1,0 +1,79 @@
+
+* {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+}
+.logo{
+
+    display:inline-block;
+    position:static;
+    left:97%;
+    width: 45rem;
+    color:white;
+    filter: invert(0%);
+}
+.topnav {
+    background-color: #212024;
+    overflow: hidden;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    user-select: none;
+    
+}
+.topnav a {
+    float: left;
+    color: rgb(255, 255, 255);
+    text-align: center;
+    padding: 14rem 16rem;
+    text-decoration: none;
+    font-size: 24rem;
+    font-family: 'Roboto', sans-serif;
+    cursor:default;
+    -webkit-user-select: none;
+    -moz-user-select: none;
+    user-select: none;
+}
+.topnav a:hover {
+    background-color: #ddd;
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+    color: black;
+}
+.mainText{
+    background-color: black;
+    margin-top: 0px;
+    position:absolute;
+    padding: 14rem 16rem;
+    bottom:-50%;
+    left:40%;
+}
+.mainStats{
+    background-color: black;
+    margin-top: 0px;
+    position: absolute;
+    bottom:-50%;
+    left:50%;
+}
+img {
+    border: 0px solid #ddd;
+    border-radius: 4px;
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+}
+.topnav a.active {
+    background-color: black;/*#4a27be;*/
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    color: white;
+}
+.topnav a:active {
+    background-color: black;
+    box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
+    color: white;
+}
+p.light {
+    color:rgb(255, 255, 255);
+    text-shadow: 5rem 5rem 4rem rgb(0, 0, 0);
+}
+body {background-color: #000000;background:url("ani.png") no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow: auto;}h1.mH {color: #ffffff;text-align: center;font-size: 36rem;margin-bottom: 20px;font-family: 'Roboto', sans-serif;}html {font-size:1px;}p {color: #000000;text-align: center;font-size: 18px;}button {display: inline-block;align-items: center;justify-content: center;width: 100px;height: 100px;border-radius: 50%;border: none;cursor: pointer;}#button1 {background-color: blue;}#button2 {background-color: red;}button:hover {box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);}button:active {transform: scale(0.95);}
