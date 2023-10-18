@@ -1,11 +1,12 @@
-
 * {
-    font-family: Arial, sans-serif;
+    font-family: 'Roboto', sans-serif;
     margin: 0;
     padding: 0;
 }
-.logo{
 
+.logo{
+    /* padding-right:3rem;*/ 
+    /* Tpadding-top: 3rem;*/
     display:inline-block;
     position:static;
     left:97%;
@@ -13,6 +14,7 @@
     color:white;
     filter: invert(0%);
 }
+
 .topnav {
     background-color: #212024;
     overflow: hidden;
@@ -22,6 +24,7 @@
     user-select: none;
     
 }
+
 .topnav a {
     float: left;
     color: rgb(255, 255, 255);
@@ -29,32 +32,83 @@
     padding: 14rem 16rem;
     text-decoration: none;
     font-size: 24rem;
-    font-family: 'Roboto', sans-serif;
     cursor:default;
     -webkit-user-select: none;
     -moz-user-select: none;
     user-select: none;
 }
+
+a:visited {
+    color: white;
+}
+
+@keyframes why {
+    0%   {text-shadow: rgba(255, 255, 255, 0) 1rem 0 80rem;font-size:72px;letter-spacing: 15rem;}
+    50% {text-shadow: rgba(255, 255, 255, 0.112) 1rem 0 80rem;font-size:72px;letter-spacing: 14.5rem;}
+    100% {text-shadow: rgba(255, 255, 255, 0) 1rem 0 80rem; font-size:72px;letter-spacing: 15rem;}
+}
+
+.url a:link {
+    background-color: #00000000;
+    color: white;
+    text-decoration: none;
+    /*box-shadow: 0 0rem 40rem rgba(255, 255, 255, .1);*/
+    text-shadow: rgb(255, 255, 255) 1rem 0 50rem;
+    animation-name: why;
+    animation-duration: 4s;
+    animation-iteration-count: infinite;
+}
+
+
 .topnav a:hover {
     background-color: #ddd;
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
     color: black;
 }
+
 .mainText{
     background-color: black;
     margin-top: 0px;
-    position:absolute;
+    position:relative;
     padding: 14rem 16rem;
-    bottom:-50%;
-    left:40%;
+    bottom:-250rem;
+    left:0%;
 }
+
+.mainPanel{
+    background-color: black;
+    margin-top: 0px;
+    position:relative;
+    padding: 140rem 16rem;
+    bottom:-250rem;
+    left:0%;
+}
+
+.secondary{
+    padding: 33rem 16rem;
+    font-size: 12rem;
+}
+
 .mainStats{
     background-color: black;
     margin-top: 0px;
-    position: absolute;
-    bottom:-50%;
-    left:50%;
+    position: relative;
+    padding: 14rem 16rem;
+    bottom:0rem;
+    left:0%;
 }
+
+.status{
+    background-color: black;
+    margin-top: 0px;
+    position: relative;
+    padding: 14rem 25rem;
+    bottom:-1250rem;
+    left:0%;
+    color:rgb(255, 255, 255);
+    text-shadow: 5rem 5rem 4rem rgb(0, 0, 0);
+}
+  
 img {
     border: 0px solid #ddd;
     border-radius: 4px;
@@ -62,18 +116,79 @@ img {
     width: 100%;
     height: 100%;
 }
+
 .topnav a.active {
     background-color: black;/*#4a27be;*/
     box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
     color: white;
 }
-.topnav a:active {
+
+a:active {
     background-color: black;
     box-shadow: 0 0 0px rgba(255, 255, 255, 0.5);
     color: white;
 }
-p.light {
+
+body {
+    background-color: #000000;
+    background:url("ani.png") no-repeat center center fixed;
+    /*background:url("https://www.paydaythegame.com/ovk-media/redux/blingbling/7ani-desktop-2.png") no-repeat center center fixed;*/
+    -webkit-background-size:cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size:cover;
+    overflow: auto;
+}
+
+h1.mH {
+    color: #ffffff;
+    text-align: center;
+    font-size: 36rem;
+    margin-bottom: 20px;
+}
+
+h1.mD {
+    color: #ffffff;
+    text-align: center;
+    font-size: 72rem;
+    margin-bottom: 20px;
+}
+
+html {
+    font-size:1px;
+}
+
+p {
     color:rgb(255, 255, 255);
     text-shadow: 5rem 5rem 4rem rgb(0, 0, 0);
+    text-align: center;
+    font-size: 24px;
+    /* -webkit-text-stroke: .15rem rgb(0, 0, 0); /* width and color */
 }
-body {background-color: #000000;background:url("ani.png") no-repeat center center fixed;-webkit-background-size: cover;-moz-background-size: cover;-o-background-size: cover;background-size: cover;overflow: auto;}h1.mH {color: #ffffff;text-align: center;font-size: 36rem;margin-bottom: 20px;font-family: 'Roboto', sans-serif;}html {font-size:1px;}p {color: #000000;text-align: center;font-size: 18px;}button {display: inline-block;align-items: center;justify-content: center;width: 100px;height: 100px;border-radius: 50%;border: none;cursor: pointer;}#button1 {background-color: blue;}#button2 {background-color: red;}button:hover {box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);}button:active {transform: scale(0.95);}
+
+button {
+    display: inline-block;
+    align-items: center;
+    justify-content: center;
+    width: 100px;
+    height: 100px;
+    border-radius: 50%;
+    border: none;
+    cursor: pointer;
+}
+
+#button1 {
+    background-color: blue;
+}
+
+#button2 {
+    background-color: red;
+}
+
+button:hover {
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+button:active {
+    transform: scale(0.95);
+}
